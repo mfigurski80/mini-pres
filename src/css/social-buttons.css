@@ -1,4 +1,8 @@
 .nav-button {
-  padding: 35px 22px;
+  padding: 27px 26px;
   line-height: 0;
+  font-size: 21px;
+} .nav-button:hover {
+  background: var(--color-light);
+  color: var(--color-dark);
 }

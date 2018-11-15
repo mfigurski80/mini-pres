@@ -1,3 +1,5 @@
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +9,12 @@ body {
   overflow: hidden;
   --color-primary: red;
 
-  --color-light: rgba(240,240,240,1);
+  --color-light: rgba(249,249,249,1);
   --color-dark: rgba(60,60,60,1);
   --color-dark-shade: rgba(60,60,60,.25);
+
+  background: var(--color-light);
+  color: var(--color-dark);
 }
 .slot, .slot-plugin {
   padding: 0;

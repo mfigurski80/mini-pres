@@ -5,10 +5,9 @@ class SocialButtons extends React.Component {
   render() {
     return(
       <div className="slot-plugin social-buttons">
-        <div class="nav-button">Inst</div>
-        <div class="nav-button">Inst</div>
-        <div class="nav-button">Inst</div>
-        <div class="nav-button">Inst</div>
+        <div className="nav-button"><i className="fab fa-facebook" /></div>
+        <div className="nav-button"><i className="fab fa-linkedin" /></div>
+        <div className="nav-button"><i className="fab fa-github" /></div>
       </div>
     );
   }
