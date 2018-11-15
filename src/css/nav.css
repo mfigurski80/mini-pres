@@ -1,0 +1,8 @@
+nav.navbar {
+  width: 100%;
+  background: var(--color-dark);
+  color: var(--color-light);
+  position: absolute;
+  bottom: 0;
+  padding: 30px 0;
+}
