@@ -1,5 +1,10 @@
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 
+@font-face {
+  font-family: "CourierPrime";
+  src: url("Courier Prime.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +21,13 @@ body {
   background: var(--color-light);
   color: var(--color-dark);
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: serif;
+}
+p {
+  font-family: "CourierPrime", courier;
+}
+
 .slot, .slot-plugin {
   padding: 0;
   margin: 0;
@@ -23,6 +35,11 @@ body {
 .slot-plugin {
   height: 100%;
   width: 100%;
+}
+
+/* Color Setters */
+.light-bg {
+  background: var(--color-light);
 }
 
 

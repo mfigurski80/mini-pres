@@ -8,7 +8,6 @@ div.layout-grid-main.fullscreen
 .layout-grid-main {
   display: grid;
   grid-template-columns: 70px 1fr 70px;
-  grid-gap: 40px;
 }
   .layout-grid-main .slot:last-of-type {
     border-left: 1px solid var(--color-dark-shade);

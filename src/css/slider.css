@@ -1,0 +1,14 @@
+.slider-sheet {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100vh;
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.slide {
+  /* background: red; */
+  border: 2px solid black;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}

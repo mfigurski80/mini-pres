@@ -5,7 +5,7 @@ import SocialButtons from './SocialButtons.js';
 class Nav extends React.Component {
   render() {
     return(
-      <div className="slot-plugin">
+      <div className="slot-plugin light-bg">
         <nav className="navbar slot">
           <SocialButtons />
         </nav>
