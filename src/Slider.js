@@ -7,9 +7,9 @@ class Slider extends React.Component {
     super(props);
     this.state = {
       slidesInfo: [
-        {title: "ohii"},
-        {title: "anhii"},
-        {title: "third"},
+        {title: "Embrace the White Space", sub: "White space provides ease for eyes. You should use it more."},
+        {title: "Never Enough"},
+        {title: "Designs frequently lack Nothing"},
       ],
       curSlide: 0,
     }
@@ -47,6 +47,7 @@ class Slider extends React.Component {
         controls={{"left": this.slideLeft, "right": this.slideRight}}
         nth={pos+1}
         outOf={slidesInfo.length}
+        isCurrent={pos == this.state.curSlide}
       />
     );
 

@@ -1,9 +1,6 @@
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
-@font-face {
-  font-family: "CourierPrime";
-  src: url("Courier Prime.ttf");
-}
 @font-face {
   font-family: "Didot";
   src: url("Didot-HTF-M96-Medium.ttf");
@@ -18,14 +15,22 @@ body {
   overflow: hidden;
   --color-primary: red;
 
-  --color-light: rgba(252,252,252,1);
+  --color-light: rgba(240,240,240,1);
   --color-dark: rgba(60,60,60,1);
   --color-medium: #b9b9b9;
   --color-dark-shade: rgba(60,60,60,.8);
 
-  background: var(--color-light);
+  background: white;
   color: var(--color-dark);
   font-family: "Didot", serif;
+}
+h1 {
+  font-size: 60px;
+  /* font-weight: normal; */
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 13px;
 }
 
 .slot, .slot-plugin {
@@ -39,7 +44,10 @@ body {
 
 /* Color Setters */
 .light-bg {
-  background: var(--color-light);
+  background: white;
+}
+.hidden {
+  opacity: 0;
 }
 
 

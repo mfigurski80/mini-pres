@@ -2,5 +2,5 @@
   height: 100vh;
   display: grid;
   grid-template-rows: 100vh;
-  transition: all .5s;
+  transition: all .7s;
 }

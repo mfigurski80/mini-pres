@@ -1,7 +1,7 @@
 nav.navbar {
   width: 100%;
   background: var(--color-dark-shade);
-  color: var(--color-light);
+  color: white;
   position: absolute;
   bottom: 0;
   padding: 30px 0;

@@ -3,6 +3,6 @@
   line-height: 0;
   font-size: 18px;
 } .nav-button:hover {
-  background: var(--color-light);
+  background: white;
   color: var(--color-dark-shade);
 }
