@@ -4,6 +4,10 @@
   font-family: "CourierPrime";
   src: url("Courier Prime.ttf");
 }
+@font-face {
+  font-family: "Didot";
+  src: url("Didot-HTF-M96-Medium.ttf");
+}
 
 * {
   margin: 0;
@@ -21,12 +25,7 @@ body {
 
   background: var(--color-light);
   color: var(--color-dark);
-}
-h1,h2,h3,h4,h5,h6 {
-  font-family: serif;
-}
-p {
-  font-family: "CourierPrime", courier;
+  font-family: "Didot", serif;
 }
 
 .slot, .slot-plugin {

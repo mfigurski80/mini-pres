@@ -8,6 +8,7 @@ class Slide extends React.Component {
       <div className="slide container">
         <div className="slide-grid-layout">
           <div className="slide-grid-col1">
+            
             <div className="slide-pos">
               <p>0{this.props.nth}</p>
               <hr />

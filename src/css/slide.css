@@ -10,17 +10,18 @@
 }
 
 
+/* Number-module */
 .slide-pos {
-  padding: 60px 0;
+  padding: 70px 0;
   display: flex;
   align-items: center;
   width: 50%;
   color: var(--color-medium);
-  /* background: red; */
 }
   .slide-pos hr {
     flex: 1;
     margin: 0 30px;
+    background: var(--color-medium);
     border: 1px solid var(--color-medium);
   }
   .slide-pos p {
