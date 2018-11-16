@@ -1,6 +1,6 @@
 nav.navbar {
   width: 100%;
-  background: var(--color-dark);
+  background: var(--color-dark-shade);
   color: var(--color-light);
   position: absolute;
   bottom: 0;

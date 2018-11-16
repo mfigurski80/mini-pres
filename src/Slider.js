@@ -1,5 +1,6 @@
 import React from 'react';
 import "./css/slider.css";
+import Slide from './Slide.js';
 
 class Slider extends React.Component {
   constructor(props) {
@@ -7,7 +8,8 @@ class Slider extends React.Component {
     this.state = {
       slidesInfo: [
         {title: "ohii"},
-        {title: "anhii"}
+        {title: "anhii"},
+        {title: "third"},
       ],
       curSlide: 0,
     }
@@ -16,44 +18,45 @@ class Slider extends React.Component {
     this.slideRight = this.slideRight.bind(this);
   }
 
+  //slides left
   slideLeft(event) {
     event.preventDefault();
-    this.setState({
-      curSlide: this.state.curSlide - 1
-    });
+    if (this.state.curSlide > 0) {
+      this.setState({
+        curSlide: this.state.curSlide - 1
+      });
+    }
   }
+  //slider right
   slideRight(event) {
     event.preventDefault();
-    this.setState({
-      curSlide: this.state.curSlide + 1
-    });
+    if (this.state.curSlide < this.state.slidesInfo.length - 1) {
+      this.setState({
+        curSlide: this.state.curSlide + 1
+      });
+    }
   }
+
 
   render() {
     const slidesInfo = this.state.slidesInfo;
-    const slidesElem = slidesInfo.map(slide =>
-      <div className="slide" key={slide.title}>
-        <h1>{slide.title}</h1>
-      </div>
+    const slidesElem = this.state.slidesInfo.map((slide, pos) =>
+      <Slide
+        key={slide.title}
+        info={slide}
+        controls={{"left": this.slideLeft, "right": this.slideRight}}
+        nth={pos+1}
+        outOf={slidesInfo.length}
+      />
     );
 
     return(
-      <div className="slot-plugin">
-        <div className="slider-control">
-          <div className="button-control" onClick={this.slideLeft}>
-            <i className="fas fa-arrow-left" />
-          </div>
-          <div className="button-control" onClick={this.slideRight}>
-            <i className="fas fa-arrow-right" />
-          </div>
-        </div>
-        <div className="slider-sheet" style={{
-          width: slidesInfo.length + "00%",
-          gridTemplateColumns: "repeat(" + slidesInfo.length + ", 1fr)",
-          transform: "translateX(" + -100*this.state.curSlide/slidesInfo.length + "%)",
-        }}>
-          {slidesElem}
-        </div>
+      <div className="slider-sheet" style={{
+        width: slidesInfo.length + "00%",
+        gridTemplateColumns: "repeat(" + slidesInfo.length + ", 1fr)",
+        transform: "translateX(" + -100*this.state.curSlide/slidesInfo.length + "%)",
+      }}>
+        {slidesElem}
       </div>
     );
   }

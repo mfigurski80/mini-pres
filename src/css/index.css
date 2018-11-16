@@ -10,10 +10,10 @@ div.layout-grid-main.fullscreen
   grid-template-columns: 70px 1fr 70px;
 }
   .layout-grid-main .slot:last-of-type {
-    border-left: 1px solid var(--color-dark-shade);
+    border-left: 1px solid var(--color-medium);
   }
   .layout-grid-main .slot:first-of-type {
-    border-right: 1px solid var(--color-dark-shade);
+    border-right: 1px solid var(--color-medium);
   }
 .fullscreen {
   height: 100vh;

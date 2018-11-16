@@ -9,11 +9,11 @@ class App extends React.Component {
   render() {
     return(
       <div className="layout-grid-main fullscreen">
-        <div className="slot"></div>
+        <div className="slot light-bg"></div>
         <div className="slot">
           <Slider />
         </div>
-        <div className="slot">
+        <div className="slot light-bg">
           <Nav />
         </div>
       </div>
