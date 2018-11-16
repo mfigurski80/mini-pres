@@ -16,7 +16,7 @@ body {
 
   --color-light: rgba(249,249,249,1);
   --color-dark: rgba(60,60,60,1);
-  --color-dark-shade: rgba(60,60,60,.25);
+  --color-dark-shade: rgba(60,60,60,0.35);
 
   background: var(--color-light);
   color: var(--color-dark);
@@ -46,4 +46,5 @@ p {
 /* BUTTONS */
 [class*="button"] {
   cursor: pointer;
+  transition: all .2s;
 }

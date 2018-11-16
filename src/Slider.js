@@ -11,6 +11,22 @@ class Slider extends React.Component {
       ],
       curSlide: 0,
     }
+
+    this.slideLeft = this.slideLeft.bind(this);
+    this.slideRight = this.slideRight.bind(this);
+  }
+
+  slideLeft(event) {
+    event.preventDefault();
+    this.setState({
+      curSlide: this.state.curSlide - 1
+    });
+  }
+  slideRight(event) {
+    event.preventDefault();
+    this.setState({
+      curSlide: this.state.curSlide + 1
+    });
   }
 
   render() {
@@ -24,9 +40,18 @@ class Slider extends React.Component {
     return(
       <div className="slot-plugin">
         <div className="slider-control">
-
+          <div className="button-control" onClick={this.slideLeft}>
+            <i className="fas fa-arrow-left" />
+          </div>
+          <div className="button-control" onClick={this.slideRight}>
+            <i className="fas fa-arrow-right" />
+          </div>
         </div>
-        <div className="slider-sheet" style={{width: slidesInfo.length + "00%", "grid-template-columns": "repeat(" + slidesInfo.length + ", 1fr)"}}>
+        <div className="slider-sheet" style={{
+          width: slidesInfo.length + "00%",
+          gridTemplateColumns: "repeat(" + slidesInfo.length + ", 1fr)",
+          transform: "translateX(" + -100*this.state.curSlide/slidesInfo.length + "%)",
+        }}>
           {slidesElem}
         </div>
       </div>
