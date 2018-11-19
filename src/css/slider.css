@@ -1,7 +1,7 @@
 .slider-sheet {
   height: 100vh;
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100%;
   transition: all .7s;
 }
 

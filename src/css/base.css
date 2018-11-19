@@ -26,7 +26,9 @@ body {
 }
 h1 {
   font-size: 60px;
-  /* font-weight: normal; */
+}
+h2 {
+  font-size: 35px;
 }
 p {
   font-family: 'Roboto Condensed', sans-serif;
@@ -40,6 +42,7 @@ p {
 .slot-plugin {
   height: 100%;
   width: 100%;
+  overflow: visible;
 }
 
 /* Color Setters */
@@ -65,4 +68,10 @@ p {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+.pad {
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  width: 100%;
 }

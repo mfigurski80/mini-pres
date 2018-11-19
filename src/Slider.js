@@ -7,8 +7,9 @@ class Slider extends React.Component {
     super(props);
     this.state = {
       slidesInfo: [
-        {title: "What is it?"},
-        {title: "What's it for?"}
+        {title: "What is it?", content: "A great thing, that's what", img:"aloe.jpeg"},
+        {title: "What's it for?", content: "Helps anchor and clean your UI, giving users better experience.", img:"aloe.jpeg"},
+        {title: "How to?", content: "Anything you can remove, simplify, or minimize, do it.", img:"aloe.jpeg"}
       ],
       curSlide: 0,
     }
