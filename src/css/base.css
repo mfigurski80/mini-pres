@@ -24,6 +24,11 @@ body {
   color: var(--color-dark);
   font-family: "Didot", serif;
 }
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
 h1 {
   font-size: 60px;
 }

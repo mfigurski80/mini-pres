@@ -12,7 +12,7 @@ class Slide extends React.Component {
           <div className="slide-grid-col2 slot-plugin">
             {
             <div className="img-wrapper">
-              <img src={"images/" + this.props.info.img}></img>
+              <img src={"images/" + this.props.info.img} alt=""></img>
             </div>
             }
           </div>
