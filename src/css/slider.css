@@ -55,4 +55,6 @@
   transform: scale(1.05);
   border-color: var(--color-dark);
   color: var(--color-dark);
+} .button-control:active {
+  transform: scale(1.03);
 }
